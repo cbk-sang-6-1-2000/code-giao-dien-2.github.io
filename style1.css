@@ -1,0 +1,179 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+  box-sizing: border-box;
+  max-width: 1170px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+    background-color: black;
+    color: white;
+}
+
+.site-header .container {
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header ul {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.site-header li {
+    margin-right: 45px;
+}
+
+.site-header li:last-child {
+    margin-right: 0;
+}
+
+.site-header a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.site-header a:hover {
+    color: red;
+}
+
+.site-header button {
+    color: white;
+    height: 40px;
+    width: 150px;
+    height: 40px;
+    background-color: #db3b3f;
+    border: none;
+    border-radius: 3px;
+}
+
+.site-header .language {
+    display: flex;
+    align-items: center;
+}
+
+.language img{
+    margin-top: 3px;
+    width: 28px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.language p{
+    margin: 0;
+    padding: 0;
+}
+
+.site-header i {
+    margin-left: 10px;
+}
+
+/*CSS MAIN*/
+
+.site-main .container {
+    display: flex;
+    height: 750px;
+    width: 1170px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    text-align: center;
+    background-color: #f8f8f8;
+    width: 400px;
+    height: 570px;
+}
+
+.site-main .form-input{
+    width: 175px;
+    height: 40px;
+}
+
+.form-sum-input .form-1{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.site-main .form-sum {
+    position: relative;
+    display: flex;
+}
+
+.site-main .form-max {
+    margin-left: 20px;
+}
+
+.site-main .form-input-max {
+    width: 360px;
+    height: 40px;
+    line-height: 40px;
+} 
+
+.form-sum .form-select-min {
+    margin-left: 20px;
+    width: 175px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-indent: 23px;
+}
+
+.form-max .form-select-max {
+    width: 360px;
+    height: 40px;
+    text-indent: 23px;
+}
+
+.form-max .btn-text {
+    background-color: red;
+    color: #fff;
+    width: 360px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.site-main .icon {
+    position: absolute;
+    left: 30px;
+    bottom: 25px;
+}
+
+::placeholder {
+    padding-left: 23px;
+    color: black;
+}
+
+.form-input:focus, .form-input-max:focus {
+    padding-left: 30px;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+/*CSS footer*/
+
+.site-footer .footer-top {
+    height: 105px;
+    background-color: #212121;
+}
+
+.site-footer .footer-bottom {
+    height: 50px;
+    background-color: black;
+}
