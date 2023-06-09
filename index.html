@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/font-awesome/css/all.css" rel="stylesheet" />
-    <link href="assets/font-awesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/fontawesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="libs/fontawesome-free-6.4.0-web/css/all.css">
+    <title>Bài tập về nhà - bài 3</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="wrapper">
         <div id="header" class="site-header">
             <div class="container">
                 <div class="site-brand">
-                    <a href=""><img src="assets/img/logo1.png" alt=""></a>
+                    <a href=""><img src="images/assets/logo1.png" alt=""></a>
                 </div>
 
                 <nav class="main-menu">
@@ -24,12 +25,12 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">The J Works'merit</a></li>
                         <li><a href="#">Worksflow</a></li>
-                        <li><button>PRE REGISTER</button></li>
+                        <li><a href="" class="btn-a">PRE REGISTER</a></li>
                     </ul>
                 </nav>
 
                 <div class="language">
-                    <img src="assets/img/england.png" alt="">
+                    <img src="images/assets/england.png" alt="">
                     <p>ENGLISH <i class="fas fa-long-arrow-alt-down"></i></p>
                 </div>
             </div>
@@ -37,36 +38,44 @@
 
         <div id="main" class="site-main">
             <div class="container">
-                    <form class="row">
-                        <h2>Let’s prepare your job searching</h2>
+                    <form class="row-table">
+                        <div class="title">
+                            <h2>Let’s prepare your job searching</h2>
+                        </div>
                         <div class="form-sum">
                             <div class="form-sum-input">
                                 <i class="fa fa-user icon"></i>
                                 <input type="text" class="form-input form-1" placeholder="First Name">
                             </div>
-                            <div class="form-sum-input">
+                            <div class="form-sum-input icons">
+                                <i class="fa fa-user icon"></i>
                                 <input type="text" class="form-input form-2" placeholder="Last Name">
                             </div>
                         </div>
                         <div class="form-max">
+                            <i class="fas fa-map-marker-alt icon"></i>
                             <input type="text" class="form-input-max" placeholder="Your Country">
                         </div>
                          <div class="form-max">
+                            <i class="fas fa-phone icon"></i>
                             <input type="text" class="form-input-max" placeholder="Phone Number">
                         </div>
                         <div class="form-sum">
+                            <i class="fa-solid fa-user-secret icon"></i>
                             <select class="form-select-min">
                                 <option value="">Sex</option>
                                 <option value="Nam">Nam</option>
                                 <option value="Nữ">Nữ</option>
                                 <option value="Other">Khác</option>
                             </select>
-                            <div class="form-sum-input">
+                            <div class="form-sum-input icons">
+                                <i class="fas fa-calendar-plus icon"></i>
                                 <input type="text" class="form-input form-3" placeholder="Age">
                             </div>
                         </div>
 
                         <div class="form-max">
+                            <i class="fa-sharp fa-solid fa-y icon"></i>
                             <select class="form-select-max">
                                 <option value="">Japanese Level</option>
                                 <option value="N1">N1</option>
@@ -76,6 +85,7 @@
                         </div>
 
                         <div class="form-max">
+                            <i class="fa-brands fa-etsy icon"></i>
                             <select class="form-select-max">
                                 <option value="">English Level</option>
                                 <option value="A1">A1</option>
@@ -86,10 +96,12 @@
                         </div>
 
                         <div class="form-max">
+                            <i class="fas fa-star icon"></i>
                             <input type="text" class="form-input-max" placeholder="Favorite Job">
                         </div>
                         
                         <div class="form-max">
+                            <i class="fas fa-map-marker-alt icon"></i>
                             <select id="inputState" class="form-select-max">
                                 <option value="">Working Place</option>
                                 <option value="1">1</option>
@@ -107,11 +119,24 @@
         <div id="footer" class="site-footer">
             <div class="footer-top">
                 <div class="container">
+                    <div class="site-brand">
+                        <a href=""><img src="images/assets/logo1.png" alt=""></a>
+                    </div>
 
+                    <div class="list-address">
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt footer-icon"></i> 
+                                <p>Global Street 5004, Newyork, <br> United States.</p></li>
+                            <li><i class="fas fa-phone footer-icon"></i> <p>Office & Factory: <br> +0 625-07520-6644 & 6655</p></li>
+                            <li><i class="fa-regular fa-envelope-open footer-icon"></i> <p>Email Support: <br> support@theiworks.com</p></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-
+                <p>
+                    Copyright © 2018 Anton Padova. All right served
+                </p>
             </div>
         </div>
     </div>

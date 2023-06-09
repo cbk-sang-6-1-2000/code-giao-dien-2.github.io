@@ -1,0 +1,270 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+.container{
+  box-sizing: border-box;
+  max-width: 1170px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+    background-color: black;
+    color: white;
+}
+
+.site-header .container {
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header ul {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.site-header li {
+    margin-right: 45px;
+}
+
+.site-header li:last-child {
+    margin-right: 0;
+}
+
+.site-header li:first-child {
+    border-bottom: 1px solid red;
+}
+
+.site-header a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.site-header a:hover {
+    color: red;
+}
+
+.site-header .btn-a {
+    color: white;
+    padding: 12px 23px;
+    background-color: #db3b3f;
+    border: none;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.site-header .btn-a:hover {
+    color: black;
+}
+
+.site-header .language {
+    display: flex;
+    align-items: center;
+}
+
+.language img{
+    margin-top: 3px;
+    width: 28px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.language p{
+    margin: 0;
+    padding: 0;
+}
+
+.site-header i {
+    margin-left: 5px;
+}
+
+/*CSS MAIN*/
+
+.site-main .container {
+    display: flex;
+    height: 750px;
+    width: 1170px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.row-table {
+    background-color: #f8f8f8;
+    width: 400px;
+    height: 570px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 36%;
+}
+
+.row-table .title{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.title h2 {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 23px;
+    color: red;
+    margin-bottom: 0;
+    padding: 30px 0 2px 0;
+}
+
+.site-main .form-input{
+    width: 175px;
+    height: 40px;
+    border: none;
+}
+
+.form-sum-input .form-1{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.site-main .form-sum {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+
+.site-main .form-max {
+    margin-left: 0;
+    margin-top: 10px;
+    position: relative;
+}
+
+.site-main .form-input-max {
+    width: 360px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+} 
+
+.form-sum .form-select-min {
+    margin-left: 20px;
+    width: 175px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-indent: 23px;
+    border: none;
+}
+
+.form-max .form-select-max {
+    width: 360px;
+    height: 40px;
+    text-indent: 23px;
+    border: none;
+}
+
+.form-max .btn-text {
+    background-color: #db3b3f;
+    color: #fff;
+    width: 360px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.site-main .icon {
+    position: absolute;
+    left: 30px;
+    bottom: 13px;
+}
+
+.icons .icon {
+    position: absolute;
+    left: 214px;
+}
+
+::placeholder {
+    padding-left: 27px;
+    color: black;
+}
+
+.form-input:focus, .form-input-max:focus {
+    padding-left: 30px;
+    outline: none;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+/*CSS footer*/
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 105px;
+}
+
+.site-footer .footer-top {
+    color: #fff;
+    background-color: #212121;
+}
+
+.footer-top ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-top li {
+    display: flex;
+    margin-right: 55px;
+    align-items: center;
+}
+
+.footer-top p {
+    margin: 0;
+}
+
+.footer-top .footer-icon {
+    margin-right: 15px;
+    color: red;
+    font-size: 22px;
+}
+
+.footer-top li:last-child  {
+    margin-right: 55px;
+}
+
+.site-footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    justify-content: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.site-footer p {
+    color: #878686;
+}
