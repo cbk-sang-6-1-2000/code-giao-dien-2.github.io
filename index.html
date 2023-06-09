@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="libs/fontawesome-free-6.4.0-web/css/all.css">
     <title>Bài tập về nhà - bài 3</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div id="wrapper">
@@ -45,38 +46,40 @@
                         <div class="form-sum">
                             <div class="form-sum-input">
                                 <i class="fa fa-user icon"></i>
-                                <input type="text" class="form-input form-1" placeholder="First Name">
+                                <input type="text" id="input-1" class="form-input form-1" placeholder="First Name"> 
                             </div>
                             <div class="form-sum-input icons">
                                 <i class="fa fa-user icon"></i>
-                                <input type="text" class="form-input form-2" placeholder="Last Name">
+                                <input type="text" id="input-2" class="form-input form-2" placeholder="Last Name">
                             </div>
                         </div>
                         <div class="form-max">
-                            <i class="fas fa-map-marker-alt icon"></i>
-                            <input type="text" class="form-input-max" placeholder="Your Country">
+                            <i class="fas fa-map-marker-alt icon" tabindex="0"></i>
+                            <input type="text" id="input-3" class="form-input-max" placeholder="Your Country">
                         </div>
                          <div class="form-max">
-                            <i class="fas fa-phone icon"></i>
-                            <input type="text" class="form-input-max" placeholder="Phone Number">
+                           <i class="fas fa-phone icon"></i>
+                            <input type="text" id="input-4" class="form-input-max" placeholder="Phone Number">
                         </div>
                         <div class="form-sum">
-                            <i class="fa-solid fa-user-secret icon"></i>
-                            <select class="form-select-min">
-                                <option value="">Sex</option>
-                                <option value="Nam">Nam</option>
-                                <option value="Nữ">Nữ</option>
-                                <option value="Other">Khác</option>
-                            </select>
-                            <div class="form-sum-input icons">
-                                <i class="fas fa-calendar-plus icon"></i>
-                                <input type="text" class="form-input form-3" placeholder="Age">
+                            <div class="form-select-1">
+                                <i class="fa-solid fa-user-secret icon"></i>
+                                <select id="select-1" class="form-input form-select-min">
+                                    <option value="">Sex</option>
+                                    <option value="Nam">Nam</option>
+                                    <option value="Nữ">Nữ</option>
+                                    <option value="Other">Khác</option>
+                                </select>
+                            </div>
+                            <div class="form-sum-input icons-2">
+                               <i class="fas fa-calendar-plus icon"></i>
+                                <input type="text" id="input-5" class="form-input form-3" placeholder="Age">
                             </div>
                         </div>
 
                         <div class="form-max">
                             <i class="fa-sharp fa-solid fa-y icon"></i>
-                            <select class="form-select-max">
+                            <select class="form-select-max" id="select-2">
                                 <option value="">Japanese Level</option>
                                 <option value="N1">N1</option>
                                 <option value="N2">N2</option>
@@ -85,8 +88,8 @@
                         </div>
 
                         <div class="form-max">
-                            <i class="fa-brands fa-etsy icon"></i>
-                            <select class="form-select-max">
+                           <i class="fas fa-map-marker-alt icon"></i>
+                            <select id="select-3" class="form-select-max">
                                 <option value="">English Level</option>
                                 <option value="A1">A1</option>
                                 <option value="A2">A2</option>
@@ -97,19 +100,19 @@
 
                         <div class="form-max">
                             <i class="fas fa-star icon"></i>
-                            <input type="text" class="form-input-max" placeholder="Favorite Job">
+                            <input type="text" id="input-6" class="form-input-max" placeholder="Favorite Job">
                         </div>
                         
                         <div class="form-max">
-                            <i class="fas fa-map-marker-alt icon"></i>
-                            <select id="inputState" class="form-select-max">
+                           <i class="fas fa-map-marker-alt icon"></i></label>
+                            <select id="select-4" class="form-select-max">
                                 <option value="">Working Place</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
                         </div>
-                        <div class="form-max">
+                        <div class="form-max-btn">
                             <button type="submit" class="btn-text">Finish pre Registration</button>
                         </div>
                     </form>
@@ -140,5 +143,12 @@
             </div>
         </div>
     </div>
+    <script>
+        const icon = document.querySelector('.fa-sharp.fa-solid.fa-y.icon');
+        const select = document.querySelector('.form-select-max');
+        icon.addEventListener('click', function() {
+          select.click();
+        });
+      </script>
 </body>
 </html>
